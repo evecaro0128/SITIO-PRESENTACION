@@ -1,32 +1,46 @@
 .bebas-neue-regular {
-    font-family: 'Bebas Neue', sans-serif;
-    background-color: #a47dab;
-    color: white;
-    display: flex;
-    align-items: center;
+  font-family: 'Bebas Neue', sans-serif;
+  background-color: #a47dab;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 24px;
+  gap: 12px;
+}
 
-    padding: 15px 30px;
+/* Foto y nombre (sin tocar HTML) */
+.bebas-neue-regular img {
+  width: 80px;
+  height: auto;
+  border-radius: 50%;
+  margin: 0 12px 0 0;
+  flex: 0 0 auto;
+}
 
+.bebas-neue-regular h1 {
+  margin: 0;
+  font-size: 32px;
+  line-height: 1;
+  white-space: nowrap;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+/* Nav a la derecha */
+.bebas-neue-regular nav {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  gap: 20px;
 }
 
 .bebas-neue-regular nav a {
-    text-decoration: none;
-    color: white;
-    margin-left: 100px;
-    font-size: 33px;
-}
-
-.bebas-neue-regular img {
-
-    width: 110px;
-}
-
-
-.bebas-neue-regular h1 {
-
-    margin-right: 1500px;
-    margin-left: 20px;
-    font-size: 40px;
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  padding: 6px 8px;
+  background: transparent;
 }
 
 
@@ -94,4 +108,18 @@
 
     padding: 10px 20px;
 
+}
+
+/* Tablet / portátil mediano: 2 columnas */
+@media (min-width: 768px) {
+  
+  .bebas-neue-regular nav a { font-size: 22px; }
+  .bebas-neue-regular h1 { font-size: 36px; }
+}
+
+@media (min-width: 1024px) {
+  .galeria, .mas {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .bebas-neue-regular h1 { font-size: 40px; }
 }
