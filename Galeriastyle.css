@@ -82,7 +82,7 @@
 /* Imagen dentro de la tarjeta */
 .fotes img, .fotes-2 img, .fotes-3 img {
   width: 100%;
-  max-width: 320px;
+  max-width: none;
   height: auto;
   display: block;
 }
@@ -108,4 +108,10 @@
 /* Limpieza: eliminar comportamientos conflictivos (si había reglas previas) */
 .galeria, .mas { /* asegurar grid */
   display: grid;
+}
+
+@media (min-width: 1440px) {
+  .fotes img, .fotes-2 img, .fotes-3 img {
+    max-width: 600px;
+  }
 }
