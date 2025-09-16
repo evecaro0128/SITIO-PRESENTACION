@@ -43,83 +43,89 @@
   background: transparent;
 }
 
+/* ===== LAYOUT TEXTO + IMAGEN ===== */
+.layout {
+  display: flex;
+  flex-direction: column; /* en móvil primero apilado */
+  gap: 40px;
+  max-width: 1400px;
+  margin: 40px auto;
+  padding: 0 20px;
+  align-items: center;
+}
 
+/* Imagen */
 .contenedor {
-    position: relative;
-    width: 600px;
-    /* Ajusta el ancho que necesites */
-
-    /* Ajusta la altura */
-    float: right;
-    /* Lo lleva a la derecha */
-    margin: 20px;
+  flex: 1;
+  max-width: 600px;
 }
 
-/* Imagen base */
 .imagen-fondo {
-    width: 700px;
-    height: 100%;
-    object-fit: cover;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 8px;
 }
 
-/* Imagen encima */
-.imagen-encima {
-    position: absolute;
-    top: 300px;
-    /* Ajusta según dónde quieras colocarla */
-    right: 198px;
-    /* Alineación hacia la derecha */
-    width: 750px;
-    height: 950px;
-    overflow: hidden;
-
+/* Texto */
+.datos {
+  flex: 1;
+  text-align: left;
 }
 
 .datos h1 {
-
-    font-family: 'Bebas Neue', sans-serif;
-    font-size: 150px;
-    margin-left: 80px;
-    margin-top: 110px;
-    margin-bottom: 15px;
-
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: clamp(2rem, 6vw, 120px);
+  margin-bottom: 20px;
+  line-height: 1.1;
 }
 
 .datos p {
-
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 40px;
-    margin-left: 80px;
-
-
-
-
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: clamp(1rem, 2vw, 28px);
+  margin-bottom: 20px;
 }
 
 .boton {
-
-    background-color: #9da1aa;
-    text-decoration: none;
-    margin-left: 80px;
-    font-size: 80px;
-    color: black;
-    border-radius: 30px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-
-    padding: 10px 20px;
-
+  display: inline-block;   /* lo mantiene debajo del texto */
+  margin-top: 20px;
+  background: #9da1aa;
+  color: black;
+  text-decoration: none;
+  border-radius: 30px;
+  padding: 12px 24px;
+  font-size: clamp(1rem, 2.5vw, 36px);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-/* Tablet / portátil mediano: 2 columnas */
+/* ===== RESPONSIVE ===== */
+
+/* Tablets y arriba → dos columnas */
 @media (min-width: 768px) {
-  
+  .layout {
+    flex-direction: row-reverse; /* imagen derecha, texto izquierda */
+    align-items: center;
+  }
+  .contenedor, .datos {
+    flex: 1;
+  }
+  .datos {
+    padding-right: 40px;
+  }
+
   .bebas-neue-regular nav a { font-size: 22px; }
   .bebas-neue-regular h1 { font-size: 36px; }
 }
 
-@media (min-width: 1024px) {
-  .galeria, .mas {
-    grid-template-columns: repeat(3, 1fr);
-  }
-  .bebas-neue-regular h1 { font-size: 40px; }
+/* Ajustes tipografía en pantallas grandes */
+@media (min-width: 1367px) {
+  .datos h1 { font-size: 120px; }
+  .datos p { font-size: 32px; }
+  .boton { font-size: 36px; }
+}
+
+@media (min-width: 1921px) {
+  .datos h1 { font-size: 150px; }
+  .datos p { font-size: 40px; }
+  .boton { font-size: 48px; }
 }
