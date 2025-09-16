@@ -1,0 +1,231 @@
+.bebas-neue-regular {
+    font-family: 'Bebas Neue', sans-serif;
+    background-color: #a47dab;
+    color: white;
+    display: flex;
+    align-items: center;
+    
+    padding: 15px 30px;
+
+}
+
+.bebas-neue-regular nav a {
+    text-decoration: none;
+    color: white;
+    margin-left: 100px;
+    font-size: 35px;
+}
+
+.bebas-neue-regular img {
+
+    width: 110px;
+}
+
+
+.bebas-neue-regular h1 {
+
+    margin-right: 1500px;
+    margin-left: 20px;
+    font-size: 40px;
+}
+
+
+.nombre {
+
+font-size: 90px;
+      font-weight: bold;
+font-family: 'Bebas Neue', sans-serif;
+vertical-align: top;
+margin-left: 20px;
+border-bottom: #a47dab;
+border-bottom-style: solid;
+
+}
+
+.titulo {
+
+    font-size: 40px;
+      font-family:Verdana, Geneva, Tahoma, sans-serif;
+margin-left: 20px;
+      
+}
+
+.sobretexto {
+
+margin-left: 20px;
+background-color: #a47dab;
+padding: 15px 30px;
+border-radius: 7px;
+font-size: 30px;
+font-family:Verdana, Geneva, Tahoma, sans-serif;
+margin-top: 3px;
+
+}
+
+
+.foto img {
+
+    width: 700px;
+    margin-top: 50px;
+    margin-left: 50px;
+    
+}
+
+.foto {
+
+display: flex;
+    
+
+}
+
+.formacion {
+      
+      margin: 40px;
+      margin-top: 3px;
+    }
+
+    .item {
+      display: flex;
+      margin-bottom: 20px;
+      margin-left: 45px;
+      
+    }
+
+    .anio {
+      width: 60px;
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 40px;
+      background-color: #a47dab;
+      padding: 15px 30px;
+      border-radius: 5px;
+    }
+
+    .detalle {
+      margin-left: 20px;
+    }
+
+    .detalle p {
+      margin: 0;
+      line-height: 1.4;
+      font-family:Verdana, Geneva, Tahoma, sans-serif;
+      font-size: 30px;
+
+    }
+
+    
+    .contacto {
+  margin-left: 67px;
+  font-family: Verdana, sans-serif;
+}
+
+.contacto-titulo {
+  background-color: #a47dab;
+  width: 165px;
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 7px;
+  font-size: 35px;
+  
+  
+}
+
+.info-contacto {
+  display: flex;
+  align-items: center;
+  margin-top: 40px;
+}
+
+.info-contacto p {
+
+margin-left: 20px;
+font-size: 35px;
+border-left-style:solid;
+border-left-color: #a47dab;
+padding-left: 8px;
+
+
+
+}
+
+.icono {
+  width: 70px;
+  height: auto;
+  margin-right: 15px;
+  
+}
+
+.habilidades-titulo {
+
+  font-family: Verdana, sans-serif;
+  margin-left: 67px;
+  margin-top: 30px;
+  font-size: 35px;
+  background-color: #a47dab;
+  padding: 10px 20px;
+  width: 198px;
+  border-radius: 7px;
+  vertical-align:middle;
+}
+
+
+.hab-datos {
+
+font-family: Verdana, sans-serif;
+  margin-left: 67px;
+  margin-top: 30px;
+font-size: 35px;
+border-right-style:solid ;
+ border-right-color:#a47dab ;
+ width: 500px;
+}
+
+
+.seccion-doble {
+  display: flex;
+  gap: 60px;
+  
+}
+
+
+.idiomas-titulo {
+
+  font-family: Verdana, sans-serif;
+  font-size: 35px;
+  background-color: #a47dab;
+  padding: 10px 20px;
+  border-radius: 7px;
+  display: inline-block;
+
+}
+
+.español {
+
+font-family: Verdana, sans-serif;
+margin-top: 30px;
+font-size: 30px;
+margin-left: 20px;
+
+
+}
+
+.barra {
+
+display: flex;
+gap: 500px;
+
+}
+
+.barra-container {
+  width: 300px;         /* ancho total de la barra */
+  height: 25px;         /* altura de la barra */
+  background-color: #ddd; /* color del fondo */
+  border-radius: 4px;   /* bordes rectos o suavemente redondeados */
+  overflow: hidden;     /* recorta el relleno que se pase */
+  margin-bottom: 10px;
+}
+
+.barra-relleno {
+  height: 100%;
+  background-color: #a47dab; /* color del progreso */
+}
+
